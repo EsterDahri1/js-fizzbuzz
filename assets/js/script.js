@@ -28,7 +28,7 @@ Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda ch
     - log
     - for
     - log
-    - if/if/if
+    - if/else if/else if/else
     - stampo in pagina
 */
 
