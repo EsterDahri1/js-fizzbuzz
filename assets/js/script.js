@@ -44,14 +44,15 @@ for (let i = 1; i < 101; i++) {
     circleDOM.className = 'circle';
 
     let number = i; 
-    //Se il numero è divisibile per 3 scrivo fizz
-    if((!(i % 3)) && (!(i % 5))){ //Se il numero è divisibile sia per 3 sia per 5 scrivo fizzbuzz
+    
+    //Se il numero è divisibile sia per 3 sia per 5 scrivo fizzbuzz
+    if((!(i % 3)) && (!(i % 5))){
         number = 'FizzBuzz';
         circleDOM.classList.add('bg-danger');
     }else if(!(i % 5)){ //Se il umero è divisibile per 5 scrivo buzz
         number = 'Buzz';
         circleDOM.classList.add('bg-warning');
-    }else if(!(i % 3)){
+    }else if(!(i % 3)){//Se il numero è divisibile per 3 scrivo fizz
         number = 'Fizz';
         circleDOM.classList.add('bg-success');
     }else{ //Altrimenti sfondo primary
