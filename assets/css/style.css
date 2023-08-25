@@ -41,3 +41,25 @@ body {
 h1{
     color: var(--fz-white);
 }
+
+.bg-success, .bg-danger, .bg-warning{
+    color: var(--fz-black);
+}
+
+.bg-success{
+    background-color: var(--fz-success);
+}
+
+.bg-danger{
+    background-color: var(--fz-danger);
+}
+
+.bg-warning{
+    background-color: var(--fz-warning);
+}
+
+.circle{
+    width: 100px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
