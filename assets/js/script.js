@@ -32,8 +32,14 @@ Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda ch
     - stampo in pagina
 */
 
+const circleDOM = document.querySelector('.circle');
+console.log(circleDOM);
 
 //Creo loop per numeri da 1 a 100
+for(let i = 1; i < 101; i++){
+    console.log(i);
+}
+
 
 //Se il numero è divisibile per 3 scrivo fizz
 
