@@ -35,29 +35,30 @@ Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda ch
 const container = document.querySelector('.container');
 console.log(container);
 
-const circleDOM = document.querySelector('.circle');
-console.log(circleDOM);
-
 //Creo loop per numeri da 1 a 100
 for (let i = 1; i < 101; i++) {
     console.log(i);
+
+    //Creo il cerchio
+    const circleDOM = document.createElement('div');
+    circleDOM.className = 'circle';
 
     let number = i; 
     //Se il numero è divisibile per 3 scrivo fizz
     if(!(i % 3)){
         number = 'Fizz';
         circleDOM.classList.add('bg-success');
-    }
-    //Se il umero è divisibile per 5 scrivo buzz
-    if(!(i % 5)){
+    }else if(!(i % 5)){ //Se il umero è divisibile per 5 scrivo buzz
         number = 'Buzz';
         circleDOM.classList.add('bg-warning');
-    }
-    //Se il numero è divisibile sia per 3 sia per 5 scrivo fizzbuzz
-    if((!(i % 3)) && (!(i % 5))){
+    }else if((!(i % 3)) && (!(i % 5))){ //Se il numero è divisibile sia per 3 sia per 5 scrivo fizzbuzz
         number = 'FizzBuzz';
         circleDOM.classList.add('bg-danger');
+    }else{ //Altrimenti sfondo primary
+        circleDOM.classList.add('bg-primary');
     }
+    
+
 
     circleDOM.append(number);
     container.append(circleDOM);

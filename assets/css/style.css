@@ -42,7 +42,7 @@ h1{
     color: var(--fz-white);
 }
 
-.bg-success, .bg-danger, .bg-warning{
+.bg-success, .bg-danger, .bg-warning, .bg-primary{
     color: var(--fz-black);
 }
 
@@ -56,6 +56,10 @@ h1{
 
 .bg-warning{
     background-color: var(--fz-warning);
+}
+
+.bg-primary{
+    background-color: var(--fz-primary);
 }
 
 .circle{
