@@ -40,6 +40,9 @@ body {
 
 h1{
     color: var(--fz-white);
+    padding: 1rem;
+    text-align: center;
+    font-size: 3rem;
 }
 
 .bg-success, .bg-danger, .bg-warning, .bg-primary{
