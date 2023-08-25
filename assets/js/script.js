@@ -45,24 +45,20 @@ for (let i = 1; i < 101; i++) {
 
     let number = i; 
     //Se il numero è divisibile per 3 scrivo fizz
-    if(!(i % 3)){
-        number = 'Fizz';
-        circleDOM.classList.add('bg-success');
+    if((!(i % 3)) && (!(i % 5))){ //Se il numero è divisibile sia per 3 sia per 5 scrivo fizzbuzz
+        number = 'FizzBuzz';
+        circleDOM.classList.add('bg-danger');
     }else if(!(i % 5)){ //Se il umero è divisibile per 5 scrivo buzz
         number = 'Buzz';
         circleDOM.classList.add('bg-warning');
-    }else if((!(i % 3)) && (!(i % 5))){ //Se il numero è divisibile sia per 3 sia per 5 scrivo fizzbuzz
-        number = 'FizzBuzz';
-        circleDOM.classList.add('bg-danger');
+    }else if(!(i % 3)){
+        number = 'Fizz';
+        circleDOM.classList.add('bg-success');
     }else{ //Altrimenti sfondo primary
         circleDOM.classList.add('bg-primary');
     }
-    
 
-
+    //Spampo in pagina
     circleDOM.append(number);
     container.append(circleDOM);
-
 }
-
-//Spampo in pagina
