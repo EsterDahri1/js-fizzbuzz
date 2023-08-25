@@ -22,6 +22,17 @@ Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda ch
 
 */
 
+/*
+## Tools
+    - const
+    - log
+    - for
+    - log
+    - if/ else if/ if
+    - stampo in pagina
+*/
+
+
 //Creo loop per numeri da 1 a 100
 
 //Se il numero è divisibile per 3 scrivo fizz
