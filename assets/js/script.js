@@ -40,7 +40,6 @@ for(let i = 1; i < 101; i++){
     console.log(i);
 }
 
-
 //Se il numero è divisibile per 3 scrivo fizz
 
 //Altrimenti se il umero è divisibile per 5 scrivo buzz

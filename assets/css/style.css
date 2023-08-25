@@ -1,2 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+:root{
+    --fz-dark: #083b4c;
+    --fz-primary: #1389b2;
+    --fz-success: #0cd6a1;
+    --fz-danger: #f0466f;
+    --fz-warning: #ffd166;
+    --fz-white: #ffffff;
+    --fz-black: #000000;
+}
 
+body {
+    background-color: var(--fz-dark);
+    font-family: 'Familjen Grotesk', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.container{
+    max-width: 1440px;
+    width: 80%;
+    margin: auto;
+}
+
+/*Utilities*/
+
+.d-flex{
+    display: flex;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+/*Main*/
+
+h1{
+    color: var(--fz-white);
+}
